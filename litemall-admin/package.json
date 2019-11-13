@@ -1,8 +1,8 @@
 {
-  "name": "litemall-admin",
+  "name": "vue-zhz-admin",
   "version": "0.1.0",
-  "description": "litemall-admin basing on vue-element-admin 3.9.3",
-  "author": "linlinjava <linlinjava@163.com>",
+  "description": "vue-zhz-admin basing on vue-element-admin 3.9.3",
+  "author": "threetree <406640478@qq.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.vue src",
     "test": "npm run lint",
     "precommit": "lint-staged",
-    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "new":"plop"
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
@@ -74,6 +75,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.0",
     "ora": "3.0.0",
     "path-to-regexp": "2.4.0",
+    "plop": "^2.5.3",
     "portfinder": "1.0.13",
     "postcss-import": "11.1.0",
     "postcss-loader": "2.1.6",

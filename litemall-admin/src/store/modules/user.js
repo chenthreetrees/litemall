@@ -53,7 +53,7 @@ const user = {
       const username = userInfo.username.trim()
       return new Promise((resolve, reject) => {
         loginByUsername(username, userInfo.password).then(response => {
-          const token = response.data.data.token
+          const token = response.data.data
           commit('SET_TOKEN', token)
           setToken(token)
           resolve()
@@ -62,7 +62,6 @@ const user = {
         })
       })
     },
-
     // 获取用户信息
     GetUserInfo({ commit, state }) {
       return new Promise((resolve, reject) => {
